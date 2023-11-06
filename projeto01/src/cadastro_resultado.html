@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado do Cadastro</title>
+</head>
+<body>
+    <h1>Resultado do Cadastro</h1>
+
+    <script>
+
+        const urlParams = new URLSearchParams(window.location.search);
+
+        const nome = urlParams.get("nome");
+        const cpf = urlParams.get("cpf");
+        const DataNasc = urlParams.get("DataNasc");
+        const sexo = urlParams.get("sexo");
+        const EstadoCivil = urlParams.get("EstadoCivil");
+        const login = urlParams.get("login");
+        const senha = urlParams.get("nome");
+        const email = urlParams.get("email");
+        const website = urlParams.get("website");
+        const cidade = urlParams.get("cidade");
+        const bairro = urlParams.get("bairro");
+        const estados = urlParams.get("estados");
+        const cep = urlParams.get("cep");
+        const telefone = urlParams.get("telefone");
+        const celular = urlParams.get("celular");
+        const categorias = urlParams.get("categorias");
+        const regras = urlParams.get("regras");
+
+        document.write(`<p>Nome: ${nome}</p>`);
+        document.write(`<p>CPF: ${cpf}</p>`);
+        document.write(`<p>Data de Nascimento: ${DataNasc}</p>`);
+        document.write(`<p>Sexo: ${sexo}</p>`);
+        document.write(`<p>Estado Civil: ${EstadoCivil}</p>`);
+        document.write(`<p>Login: ${login}</p>`);
+        document.write(`<p>Senha: ${senha}</p>`);
+        document.write(`<p>E-mail: ${email}</p>`);
+        document.write(`<p>Website: ${website}</p>`);
+        document.write(`<p>Cidade: ${cidade}</p>`);
+        document.write(`<p>Bairro: ${bairro}</p>`);
+        document.write(`<p>Estado: ${estados}</p>`);
+        document.write(`<p>CEP: ${cep}</p>`);
+        document.write(`<p>Telefone: ${telefone}</p>`);
+        document.write(`<p>Celular: ${celular}</p>`);
+        document.write(`<p>Categorias: ${categorias}</p>`);
+        document.write(`<p>Regras: ${regras}</p>`);
+
+    </script>
+</body>
+</html>
